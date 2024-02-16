@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating parent child relationship in css</title>
+    <style>
+        #parent{
+            width: 1000px;
+            height: 150px;
+            background: green;
+            margin-left: 180px;
+            box-sizing: border-box;
+        }
+        #parent:hover{
+         border-radius: 100px;
+        }
+        #parent #child1,#parent #child2{
+            width: 1000px;
+            height: 40px;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bolder;
+            padding-top: 3PX;
+            font-size: 20PX;
+        }
+        #parent #child1{
+            background: yellow;
+        }
+        #parent #child2{
+            background: pink;
+        }
+        #parent:hover #child1,#parent:hover #child2{
+            border-radius: 1040px;
+        }
+        #parent #child1:hover, #parent #child2:hover{
+            background: yellowgreen;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1">CLICK NOW</div>
+        <div id="child2">CLICK NOW</div>
+    </div>
+</body>
+</html>
